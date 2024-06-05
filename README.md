@@ -8,6 +8,7 @@ pip install -r requirements.txt
 
 ### Run Script
 
+Navigate to project folder and run following script
 ```bash
 robot --pythonpath . tests
 ```
