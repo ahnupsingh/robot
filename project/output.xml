@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.6 on darwin)" generated="2024-06-02T21:21:57.599876" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/ganeshdhakal/ramailo/robot/project/tests">
+<suite id="s1-s1" name="Insurance" source="/Users/ganeshdhakal/ramailo/robot/project/tests/insurance.robot">
+<test id="s1-s1-t1" name="Create Quote for Car" line="9">
+<kw name="Open Insurance Application">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:21:57.683818" level="INFO">Opening browser 'chrome' to base url 'http://sampleapp.tricentis.com/'.</msg>
+<arg>http://sampleapp.tricentis.com/</arg>
+<arg>${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-02T21:21:57.683567" elapsed="21.011605"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-02T21:22:18.696660" elapsed="0.359966"/>
+</kw>
+<status status="PASS" start="2024-06-02T21:21:57.683063" elapsed="21.373742"/>
+</kw>
+<kw name="Enter Vehicle Data for Automobile">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:22:19.058254" level="INFO">Clicking element 'xpath=//div[@class='main-navigation']//a[text()='Automobile']'.</msg>
+<arg>xpath=//div[@class='main-navigation']//a[text()='Automobile']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-02T21:22:19.057539" elapsed="2.627234"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:22:21.685092" level="INFO">Selecting options from selection list 'id=make' by label Audi.</msg>
+<arg>id=make</arg>
+<arg>Audi</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-06-02T21:22:21.684932" elapsed="0.034147"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:22:21.719374" level="INFO">Typing text '110' into text field 'id=engineperformance'.</msg>
+<arg>id=engineperformance</arg>
+<arg>110</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-02T21:22:21.719225" elapsed="0.099526"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:22:21.819044" level="INFO">Typing text '06/12/1980' into text field 'id=dateofmanufacture'.</msg>
+<arg>id=dateofmanufacture</arg>
+<arg>06/12/1980</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-02T21:22:21.818904" elapsed="0.049455"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:22:21.868650" level="INFO">Selecting options from selection list 'id=numberofseats' by label 5.</msg>
+<arg>id=numberofseats</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-06-02T21:22:21.868507" elapsed="0.027285"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:22:21.896040" level="INFO">Selecting options from selection list 'id=fuel' by label Petrol.</msg>
+<arg>id=fuel</arg>
+<arg>Petrol</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-06-02T21:22:21.895914" elapsed="0.026564"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:22:21.922747" level="INFO">Typing text '30000' into text field 'id=listprice'.</msg>
+<arg>id=listprice</arg>
+<arg>30000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-02T21:22:21.922610" elapsed="0.034556"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:22:21.957450" level="INFO">Typing text 'DMK1234' into text field 'id=licenseplatenumber'.</msg>
+<arg>id=licenseplatenumber</arg>
+<arg>DMK1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-02T21:22:21.957304" elapsed="0.034863"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:22:21.992454" level="INFO">Typing text '10000' into text field 'id=annualmileage'.</msg>
+<arg>id=annualmileage</arg>
+<arg>10000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-02T21:22:21.992306" elapsed="0.040544"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:22:22.033130" level="INFO">Clicking button 'xpath=//button[text()='Next »']'.</msg>
+<arg>xpath=//button[text()='Next »']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-02T21:22:22.032991" elapsed="0.050816"/>
+</kw>
+<status status="PASS" start="2024-06-02T21:22:19.057217" elapsed="3.026698"/>
+</kw>
+<kw name="Enter Insurant Data">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:22:22.084643" level="INFO">Typing text 'Max' into text field 'id=firstname'.</msg>
+<arg>id=firstname</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-02T21:22:22.084482" elapsed="0.033800"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:22:22.118567" level="INFO">Typing text 'Mustermann' into text field 'id=lastname'.</msg>
+<arg>id=lastname</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-02T21:22:22.118408" elapsed="0.039192"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:22:22.157894" level="INFO">Typing text '01/31/1980' into text field 'id=birthdate'.</msg>
+<arg>id=birthdate</arg>
+<arg>01/31/1980</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-02T21:22:22.157750" elapsed="0.044435"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-02T21:22:22.202456" level="INFO">Clicking element 'id=gendermale'.</msg>
+<msg time="2024-06-02T21:22:23.604769" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-02T21:22:23.605068" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input id="gendermale" name="Gender" type="radio" value="Male" style="position: absolute; left: -9999px;"&gt; is not clickable at point (459, 512). Other element would receive the click: &lt;span class="ideal-radio"&gt;&lt;/span&gt;
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+0   chromedriver                        0x00000001012464c8 chromedriver + 4302024
+1   chromedriver                        0x000000010123ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000100e7019c chromedriver + 278940
+3   chromedriver                        0x0000000100eb7d48 chromedriver + 572744
+4   chromedriver                        0x0000000100eb62ec chromedriver + 565996
+5   chromedriver                        0x0000000100eb447c chromedriver + 558204
+6   chromedriver                        0x0000000100eb39cc chromedriver + 555468
+7   chromedriver                        0x0000000100ea8e24 chromedriver + 511524
+8   chromedriver                        0x0000000100ea885c chromedriver + 510044
+9   chromedriver                        0x0000000100eeac5c chromedriver + 781404
+10  chromedriver                        0x0000000100ea7004 chromedriver + 503812
+11  chromedriver                        0x0000000100ea79ec chromedriver + 506348
+12  chromedriver                        0x000000010120e510 chromedriver + 4072720
+13  chromedriver                        0x0000000101212fbc chromedriver + 4091836
+14  chromedriver                        0x00000001011f5754 chromedriver + 3970900
+15  chromedriver                        0x00000001012138a4 chromedriver + 4094116
+16  chromedriver                        0x00000001011e86d4 chromedriver + 3917524
+17  chromedriver                        0x0000000101230b08 chromedriver + 4213512
+18  chromedriver                        0x0000000101230c84 chromedriver + 4213892
+19  chromedriver                        0x000000010123ea08 chromedriver + 4270600
+20  libsystem_pthread.dylib             0x00000001a5cc3fa8 _pthread_start + 148
+21  libsystem_pthread.dylib             0x00000001a5cbeda0 thread_start + 8
+</msg>
+<arg>id=gendermale</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-02T21:22:22.202325" elapsed="1.429983">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input id="gendermale" name="Gender" type="radio" value="Male" style="position: absolute; left: -9999px;"&gt; is not clickable at point (459, 512). Other element would receive the click: &lt;span class="ideal-radio"&gt;&lt;/span&gt;
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+0   chromedriver                        0x00000001012464c8 chromedriver + 4302024
+1   chromedriver                        0x000000010123ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000100e7019c chromedriver + 278940
+3   chromedriver                        0x0000000100eb7d48 chromedriver + 572744
+4   chromedriver                        0x0000000100eb62ec chromedriver + 565996
+5   chromedriver                        0x0000000100eb447c chromedriver + 558204
+6   chromedriver                        0x0000000100eb39cc chromedriver + 555468
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000100ea79ec chromedriver + 506348
+12  chromedriver                        0x000000010120e510 chromedriver + 4072720
+13  chromedriver                        0x0000000101212fbc chromedriver + 4091836
+14  chromedriver                        0x00000001011f5754 chromedriver + 3970900
+15  chromedriver                        0x00000001012138a4 chromedriver + 4094116
+16  chromedriver                        0x00000001011e86d4 chromedriver + 3917524
+17  chromedriver                        0x0000000101230b08 chromedriver + 4213512
+18  chromedriver                        0x0000000101230c84 chromedriver + 4213892
+19  chromedriver                        0x000000010123ea08 chromedriver + 4270600
+20  libsystem_pthread.dylib             0x00000001a5cc3fa8 _pthread_start + 148
+21  libsystem_pthread.dylib             0x00000001a5cbeda0 thread_start + 8</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=streetaddress</arg>
+<arg>Test Street</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-02T21:22:23.632801" elapsed="0.000419"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=country</arg>
+<arg>Germany</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-06-02T21:22:23.633559" elapsed="0.000071"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=zipcode</arg>
+<arg>40123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-02T21:22:23.633901" elapsed="0.000075"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=city</arg>
+<arg>Essen</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-02T21:22:23.634192" elapsed="0.000038"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=occupation</arg>
+<arg>Employee</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-06-02T21:22:23.634369" elapsed="0.000033"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//input[@id='cliffdiving']/following-sibling::label</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-02T21:22:23.634540" elapsed="0.000362"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//button[text()='Next »']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-02T21:22:23.635029" elapsed="0.000032"/>
+</kw>
+<status status="FAIL" start="2024-06-02T21:22:22.084185" elapsed="1.551133">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input id="gendermale" name="Gender" type="radio" value="Male" style="position: absolute; left: -9999px;"&gt; is not clickable at point (459, 512). Other element would receive the click: &lt;span class="ideal-radio"&gt;&lt;/span&gt;
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+0   chromedriver                        0x00000001012464c8 chromedriver + 4302024
+1   chromedriver                        0x000000010123ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000100e7019c chromedriver + 278940
+3   chromedriver                        0x0000000100eb7d48 chromedriver + 572744
+4   chromedriver                        0x0000000100eb62ec chromedriver + 565996
+5   chromedriver                        0x0000000100eb447c chromedriver + 558204
+6   chromedriver                        0x0000000100eb39cc chromedriver + 555468
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000100ea79ec chromedriver + 506348
+12  chromedriver                        0x000000010120e510 chromedriver + 4072720
+13  chromedriver                        0x0000000101212fbc chromedriver + 4091836
+14  chromedriver                        0x00000001011f5754 chromedriver + 3970900
+15  chromedriver                        0x00000001012138a4 chromedriver + 4094116
+16  chromedriver                        0x00000001011e86d4 chromedriver + 3917524
+17  chromedriver                        0x0000000101230b08 chromedriver + 4213512
+18  chromedriver                        0x0000000101230c84 chromedriver + 4213892
+19  chromedriver                        0x000000010123ea08 chromedriver + 4270600
+20  libsystem_pthread.dylib             0x00000001a5cc3fa8 _pthread_start + 148
+21  libsystem_pthread.dylib             0x00000001a5cbeda0 thread_start + 8</status>
+</kw>
+<kw name="Enter Product Data">
+<status status="NOT RUN" start="2024-06-02T21:22:23.635654" elapsed="0.000057"/>
+</kw>
+<kw name="Select Price Option">
+<status status="NOT RUN" start="2024-06-02T21:22:23.635880" elapsed="0.000020"/>
+</kw>
+<kw name="Send Quote">
+<status status="NOT RUN" start="2024-06-02T21:22:23.636315" elapsed="0.000250"/>
+</kw>
+<kw name="End Test">
+<status status="NOT RUN" start="2024-06-02T21:22:23.636807" elapsed="0.000113"/>
+</kw>
+<status status="FAIL" start="2024-06-02T21:21:57.682639" elapsed="25.954723">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input id="gendermale" name="Gender" type="radio" value="Male" style="position: absolute; left: -9999px;"&gt; is not clickable at point (459, 512). Other element would receive the click: &lt;span class="ideal-radio"&gt;&lt;/span&gt;
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+0   chromedriver                        0x00000001012464c8 chromedriver + 4302024
+1   chromedriver                        0x000000010123ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000100e7019c chromedriver + 278940
+3   chromedriver                        0x0000000100eb7d48 chromedriver + 572744
+4   chromedriver                        0x0000000100eb62ec chromedriver + 565996
+5   chromedriver                        0x0000000100eb447c chromedriver + 558204
+6   chromedriver                        0x0000000100eb39cc chromedriver + 555468
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000100ea79ec chromedriver + 506348
+12  chromedriver                        0x000000010120e510 chromedriver + 4072720
+13  chromedriver                        0x0000000101212fbc chromedriver + 4091836
+14  chromedriver                        0x00000001011f5754 chromedriver + 3970900
+15  chromedriver                        0x00000001012138a4 chromedriver + 4094116
+16  chromedriver                        0x00000001011e86d4 chromedriver + 3917524
+17  chromedriver                        0x0000000101230b08 chromedriver + 4213512
+18  chromedriver                        0x0000000101230c84 chromedriver + 4213892
+19  chromedriver                        0x000000010123ea08 chromedriver + 4270600
+20  libsystem_pthread.dylib             0x00000001a5cc3fa8 _pthread_start + 148
+21  libsystem_pthread.dylib             0x00000001a5cbeda0 thread_start + 8</status>
+</test>
+<status status="FAIL" start="2024-06-02T21:21:57.611906" elapsed="26.033871"/>
+</suite>
+<status status="FAIL" start="2024-06-02T21:21:57.601285" elapsed="26.045032"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Insurance">Tests.Insurance</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
